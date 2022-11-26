@@ -36,7 +36,7 @@ html, body{
 }
 
 body{
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0px auto;
     display: grid;
 
@@ -93,11 +93,12 @@ body{
         place-items: center;
         gap: 30px;
         
+        
         .one {
             background-color: var(--section);
-            padding-left: 30px;
+            //padding-left: 30px;
             display: grid;
-            grid-template-columns:1fr 1fr;
+            //grid-template-columns:1fr 1fr;
             gap: 15px;
             border-radius: 20px;
           
@@ -110,9 +111,9 @@ body{
         }
         .two{
             background-color: var(--section);
-            padding-left: 30px;
+            //padding-left: 30px;
             display: grid;
-            grid-template-columns:1fr 1fr;
+            //grid-template-columns:1fr 1fr;
 
             gap: 15px;
             border-radius: 20px;
@@ -126,9 +127,9 @@ body{
         }
         .three{
             background-color: var(--section);
-            padding-left: 30px;
+            //padding-left: 30px;
             display: grid;
-            grid-template-columns:1fr 1fr;
+            //grid-template-columns:1fr 1fr;
             gap: 15px;
             border-radius: 20px;
             
@@ -140,6 +141,7 @@ body{
             
         }
         .text{
+            padding: 15px;
             position: relative;
             top: 10px;
             h3{
@@ -245,14 +247,10 @@ body{
     } 
 }
 @media (max-width: 499px){
-    .body{
-        max-width: none;
-        .desc-section{
-            .content{
-            display: flex;
-            flex-direction: column;
+    .section{
+            display: grid;
+            grid-template-rows: max-content;
         }
-    }
-    } 
-
 }
+    
+
