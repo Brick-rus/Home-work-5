@@ -30,7 +30,7 @@ html, body {
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0px auto;
   display: grid;
   grid-template-rows: 90vh repeat(3, min-content);
@@ -80,9 +80,7 @@ body {
 }
 .desc-section .content .one {
   background-color: var(--section);
-  padding-left: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 15px;
   border-radius: 20px;
 }
@@ -93,9 +91,7 @@ body {
 }
 .desc-section .content .two {
   background-color: var(--section);
-  padding-left: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 15px;
   border-radius: 20px;
 }
@@ -106,9 +102,7 @@ body {
 }
 .desc-section .content .three {
   background-color: var(--section);
-  padding-left: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 15px;
   border-radius: 20px;
 }
@@ -118,6 +112,7 @@ body {
   border-radius: 20px;
 }
 .desc-section .content .text {
+  padding: 15px;
   position: relative;
   top: 10px;
 }
@@ -200,11 +195,8 @@ body {
   }
 }
 @media (max-width: 499px) {
-  .body {
-    max-width: none;
-  }
-  .body .desc-section .content {
-    display: flex;
-    flex-direction: column;
+  .section {
+    display: grid;
+    grid-template-rows: max-content;
   }
 }
